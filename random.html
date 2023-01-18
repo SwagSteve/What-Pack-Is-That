@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>What Pack Is That?</title>
+  <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/YPgCjHS/favicon.png"/>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/97bedb4f98.js" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <div class="search-wrapper">
+    <div class="search-input">
+      <input type="text" placeholder="Search game..." id="inputID">
+      <div class="autocom-box" id="autocomID"></div>
+    </div>
+  </div>
+  <script src="search.js"></script>
+  <script src="suggestions.js"></script>
+<div class="wrapper">
+    <div class="sidebar", id="sidebar">
+      <h1 style="color: white; padding-bottom: 25px;">What Pack Is That?</h1>
+        <ul>
+            <h3><li><a href="index.html"><i class="fas fa-home"></i>Home</a></li></h3>
+            <h3><li><a href="about.html"><i class="fa-solid fa-circle-question"></i> About</a></li></h3>
+            <h3><li><a href="packs.html"><i class="fa-solid fa-box-open"></i> Packs</a></li></h3>
+            <h3><li><a href="games.html"><i class="fa-solid fa-gamepad"></i> Games</a></li></h3>
+            <h3><li><a href="random.html"><i class="fa-solid fa-dice"></i> Random Generator</a></li></h3>
+        </ul>
+    </div>
+    <div class="main_content", id="main">
+    <div class="bgimg">
+    <div class="header"><h1"></h1></div>
+    </div>
+    <div class="panel-center">
+      <h1><img src="assets/random.png" style="width: 50%; height: auto;"></h1>
+    </div>
+
+    <div class="panel-center">
+      <h1 style="text-shadow: 2px 2px 2px rgb(71, 71, 71); margin-bottom: 10px; text-decoration: underline; text-underline-offset: 5px;"><b>Here You Can Randomly Generate A Game!</b></h1>
+      <h3 style="margin-top: 20px; font-size: x-large;">
+        Just check which packs you own, click generate, and a game will be generated!
+      </h3>
+    </div>
+
+    <div class="panel-center">
+        <h1 style="text-decoration: underline; text-underline-offset: 10px;">
+            Step 1: Choose the packs!
+            <br><br>
+        </h1>
+        <input type="checkbox" id="pack1"/>
+        <label for="pack1"><img src="https://iili.io/Ha5buup.png"/></label>
+        <input type="checkbox" id="pack2"/>
+        <label for="pack2"><img src="https://iili.io/Ha5bRtI.png"/></label>
+        <input type="checkbox" id="pack3"/>
+        <label for="pack3"><img src="https://iili.io/Ha5bAwN.png"/></label>
+        <input type="checkbox" id="pack4"/>
+        <label for="pack4"><img src="https://iili.io/Ha5bT9R.png"/></label>
+        <input type="checkbox" id="pack5"/>
+        <label for="pack5"><img src="https://iili.io/Ha5bYMX.png"/></label>
+        <input type="checkbox" id="pack6"/>
+        <label for="pack6"><img src="https://iili.io/Ha5baPn.png"/></label>
+        <input type="checkbox" id="pack7"/>
+        <label for="pack7"><img src="https://iili.io/Ha5blFs.png"/></label>
+        <input type="checkbox" id="pack8"/>
+        <label for="pack8"><img src="https://iili.io/Ha5b0cG.png"/></label>
+        <input type="checkbox" id="pack9"/>
+        <label for="pack9"><img src="https://iili.io/Ha5b1Sf.png"/></label>
+    </div>
+    <div class="panel-center2">
+        <button onclick="random()" style="width: 500px; height: 100px; color: rgb(0, 255, 0); border: solid; border-radius: 40px; cursor: pointer; background-color: rgba(0, 0, 0,0); font-size: 40px;">GENERATE</button>
+    </div>
+  </div>
+</body>
+</html>
