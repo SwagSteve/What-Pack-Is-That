@@ -18,7 +18,7 @@ This website is designed with those in mind who own a lot of Jackbox Party packs
   * Find games using the [Packs](https://swagsteve.github.io/What-Pack-Is-That/packs.html) page
   * Find the pack a game belongs to, using the [Games](https://swagsteve.github.io/What-Pack-Is-That/games.html) page
 
-There are "Quick Run With Steam" buttons littered across the site which allow quick opening of the Jackbox pack associated which the selected game belongs to
+There are "Quick Run With Steam" buttons littered across the site which allows quick opening of the Jackbox pack which the selected game belongs to
 
 ### On a game's page there will be a quick run button, as well as information including:
  * Game Icon
