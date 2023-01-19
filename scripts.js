@@ -112,7 +112,7 @@ function random() {
     var item = set[Math.floor(Math.random()*set.length)];
 
     //COMBINE RESULT INTO URL
-    baseURL = "https://swagsteve.github.io/"
+    baseURL = "https://swagsteve.github.io/What-Pack-Is-That/"
 
     //Define URL
     url = ""

@@ -60,23 +60,23 @@ function select(element) {
     url = ""
 
     if (pack1.includes(array[value])) {
-        url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack1/", array[value], ".html")
+        url = url.concat("https://swagsteve.github.io/What-Pack-Is-That/", "game-pages/", "pack1/", array[value], ".html")
     } else if (pack2.includes(array[value])) {
-        url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack2/", array[value], ".html")
+        url = url.concat("https://swagsteve.github.io/What-Pack-Is-That/", "game-pages/", "pack2/", array[value], ".html")
     } else if (pack3.includes(array[value])) {
-        url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack3/", array[value], ".html")
+        url = url.concat("https://swagsteve.github.io/What-Pack-Is-That/", "game-pages/", "pack3/", array[value], ".html")
     } else if (pack4.includes(array[value])) {
-        url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack4/", array[value], ".html")
+        url = url.concat("https://swagsteve.github.io/What-Pack-Is-That/", "game-pages/", "pack4/", array[value], ".html")
     } else if (pack5.includes(array[value])) {
-        url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack5/", array[value], ".html")
+        url = url.concat("https://swagsteve.github.io/What-Pack-Is-That/", "game-pages/", "pack5/", array[value], ".html")
     } else if (pack6.includes(array[value])) {
-        url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack6/", array[value], ".html")
+        url = url.concat("https://swagsteve.github.io/What-Pack-Is-That/", "game-pages/", "pack6/", array[value], ".html")
     } else if (pack7.includes(array[value])) {
-        url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack7/", array[value], ".html")
+        url = url.concat("https://swagsteve.github.io/What-Pack-Is-That/", "game-pages/", "pack7/", array[value], ".html")
     } else if (pack8.includes(array[value])) {
-        url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack8/", array[value], ".html")
+        url = url.concat("https://swagsteve.github.io/What-Pack-Is-That/", "game-pages/", "pack8/", array[value], ".html")
     } else if (pack9.includes(array[value])) {
-        url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack9/", array[value], ".html")
+        url = url.concat("https://swagsteve.github.io/What-Pack-Is-That/", "game-pages/", "pack9/", array[value], ".html")
     }
 
     window.open(url, '_blank').focus();
