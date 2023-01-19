@@ -12,6 +12,16 @@ let array = [
     "fibbage4","quixort","junktopia","nonsensory","roomerang"
 ];
 
+const pack1 = ["jack2015","fibbagexl","drawful","wordspud","lieswatter"]
+const pack2 = ["fibbage2","earwax","bidiots","quiplashxl","bombcorp"]
+const pack3 = ["quiplash2","triviamurderparty","guesspionage","teeko","fakinit"]
+const pack4 = ["fibbage3","survivetheinternet","monsterseekingmonster","bracketeering","civicdoodle"]
+const pack5 = ["jackfullstream","splittheroom","madversecity","patentlystupid","zeepledome"]
+const pack6 = ["triviamurderparty2","rolemodels","jokeboat","dictionarium","pushthebutton"]
+const pack7 = ["quiplash3","thedevilandthedetails","champdup","talkingpoints","blatherround"]
+const pack8 = ["drawfulanimate","jobjob","thepollmine","weaponsdrawn","thewheel"]
+const pack9 = ["fibbage4","quixort","junktopia","nonsensory","roomerang"]
+
 const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input")
 const suggBox = searchWrapper.querySelector(".autocom-box")
@@ -37,59 +47,42 @@ inputBox.onkeyup = (e)=>{
   }
 }
 
+//ONCLICK AUTOCOMPLETE
 function select(element) {
     let selectUserData = element.textContent;
     inputBox.value = selectUserData;
     searchWrapper.classList.remove("active");
     console.log(selectUserData)
 
-    //OPEN TAB CODE
-
+    //OPEN WINDOW TAB
     value = findSimilarValue(selectUserData)
 
-    const pack1 = ["jack2015","fibbagexl","drawful","wordspud","lieswatter"]
-    const pack2 = ["fibbage2","earwax","bidiots","quiplashxl","bombcorp"]
-    const pack3 = ["quiplash2","triviamurderparty","guesspionage","teeko","fakinit"]
-    const pack4 = ["fibbage3","survivetheinternet","monsterseekingmonster","bracketeering","civicdoodle"]
-    const pack5 = ["jackfullstream","splittheroom","madversecity","patentlystupid","zeepledome"]
-    const pack6 = ["triviamurderparty2","rolemodels","jokeboat","dictionarium","pushthebutton"]
-    const pack7 = ["quiplash3","thedevilandthedetails","champdup","talkingpoints","blatherround"]
-    const pack8 = ["drawfulanimate","jobjob","thepollmine","weaponsdrawn","thewheel"]
-    const pack9 = ["fibbage4","quixort","junktopia","nonsensory","roomerang"]
+    url = ""
 
     if (pack1.includes(array[value])) {
-        url = ""
         url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack1/", array[value], ".html")
     } else if (pack2.includes(array[value])) {
-        url = ""
         url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack2/", array[value], ".html")
     } else if (pack3.includes(array[value])) {
-        url = ""
         url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack3/", array[value], ".html")
     } else if (pack4.includes(array[value])) {
-        url = ""
         url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack4/", array[value], ".html")
     } else if (pack5.includes(array[value])) {
-        url = ""
         url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack5/", array[value], ".html")
     } else if (pack6.includes(array[value])) {
-        url = ""
         url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack6/", array[value], ".html")
     } else if (pack7.includes(array[value])) {
-        url = ""
         url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack7/", array[value], ".html")
     } else if (pack8.includes(array[value])) {
-        url = ""
         url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack8/", array[value], ".html")
     } else if (pack9.includes(array[value])) {
-        url = ""
         url = url.concat("https://swagsteve.github.io/", "game-pages/", "pack9/", array[value], ".html")
     }
 
     window.open(url, '_blank').focus();
-
 }
 
+//LEVENSHTEIN DISTANCE ALGORITHM
 function levenshteinDistance(a, b) {
     if (a.length === 0) return b.length; 
     if (b.length === 0) return a.length; 
@@ -112,20 +105,8 @@ function levenshteinDistance(a, b) {
     return matrix[b.length][a.length];
   }
 
+//USE LEVENSHTEIN DISTANCE ALGORITHM FIND SIMILAR VALUE
 function findSimilarValue(inputString) {
-
-    let array = [
-        "jack2015","fibbagexl","drawful","wordspud","lieswatter",
-        "fibbage2","earwax","bidiots","quiplashxl","bombcorp",
-        "quiplash2","triviamurderparty","guesspionage","teeko","fakinit",
-        "fibbage3","survivetheinternet","monsterseekingmonster","bracketeering","civicdoodle",
-        "jackfullstream","splittheroom","madversecity","patentlystupid","zeepledome",
-        "triviamurderparty2","rolemodels","jokeboat","dictionarium","pushthebutton",
-        "quiplash3","thedevilandthedetails","champdup","talkingpoints","blatherround",
-        "drawfulanimate","jobjob","thepollmine","weaponsdrawn","thewheel",
-        "fibbage4","quixort","junktopia","nonsensory","roomerang"
-    ];
-
     let minDistance = Infinity;
     let minDistanceIndex = -1;
     for (let i = 0; i < array.length; i++) {

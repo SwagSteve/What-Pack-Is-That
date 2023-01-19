@@ -110,7 +110,6 @@ function random() {
   //GET RANDOM FROM LIST
   if (set.length != 0) {
     var item = set[Math.floor(Math.random()*set.length)];
-    console.log(item)
 
     //COMBINE RESULT INTO URL
     baseURL = "https://swagsteve.github.io/"
