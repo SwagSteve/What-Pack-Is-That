@@ -1,5 +1,5 @@
-<p align="center">
-  <img src="https://iili.io/HcFDM12.md.png">
+<p align="center" width="50">
+  <img src="https://iili.io/HcKWF7n.png">
 </p>
 
 ---
