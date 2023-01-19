@@ -28,7 +28,7 @@ body{
 }
 
 .wrapper .sidebar{
-  width: 350px;
+  width: 20%;
   height: 100%;
   background: rgba(8, 8, 9, 0.9);
   backdrop-filter: blur(3px);
@@ -98,7 +98,23 @@ body{
   margin: 30px auto;
   max-width: 900px;
   text-align: center;
-  margin-right: 200px;
+  margin-right: 100px;
+  width: 60%;
+}
+
+.panel-center-games {
+  display: inline-block;
+  border-color: #0b0b0d;
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 0 15px #000;
+  padding: 30px;
+  background: #0b0b0d;
+  margin: 30px auto;
+  max-width: 900px;
+  text-align: center;
+  margin-right: 100px;
+  width: 60%;
 }
 
 .panel-center2 {
@@ -132,6 +148,10 @@ body{
   max-width: 800px;
   text-align: center;
   margin-right: 200px;
+}
+
+.panel-game h1{
+  white-space: nowrap;
 }
 
 .wrapper .sidebar ul li:hover{
@@ -527,7 +547,7 @@ label:before {
 }
 
 label img {
-  height: 250px;
+  width: 100%;
   transition-duration: 0.2s;
   transform-origin: 50% 50%;
   border-radius: 20px;
