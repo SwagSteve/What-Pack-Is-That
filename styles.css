@@ -150,6 +150,10 @@ body{
   margin-right: 200px;
 }
 
+.panel-game h1{
+  white-space: nowrap;
+}
+
 .wrapper .sidebar ul li:hover{
   background-color: rgb(19, 19, 19);
 }
