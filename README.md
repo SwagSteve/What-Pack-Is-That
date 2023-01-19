@@ -41,3 +41,12 @@ There is also a tool included which allows you to randomly generate a game to pl
 <p align="center">
   <img src="https://iili.io/HcKVKoQ.png">
 </p>
+
+<h1 align="center">
+  Todo List
+</h1>
+
+ * Improve responsiveness for mobile devices
+ * Improve overall look
+ * Fix icon scaling for mobile devices in "Random" page
+
