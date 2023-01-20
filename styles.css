@@ -15,12 +15,11 @@ body{
   background-image: url(https://i.ibb.co/7rPp047/space.png);
   background-size: cover;
   background-position:50% 50%;
-  image-rendering: crisp-edges;
-  image-rendering: -moz-crisp-edges;          
-  image-rendering: -o-crisp-edges;            
+  image-rendering: -moz-crisp-edges;       
+  image-rendering: pixelated;     
   image-rendering: -webkit-optimize-contrast; 
   -ms-interpolation-mode: nearest-neighbor;
-  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 .wrapper{
