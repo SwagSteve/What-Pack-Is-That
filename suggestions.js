@@ -7,5 +7,6 @@ let suggestions = [
     "Trivia Murder Party 2","Role Models","Joke Boat","Dictionarium","Push The Button",
     "Quiplash 3","The Devils and the Details","Champ’d Up","Talking Points","Blather ‘Round",
     "Drawful Animate","Job Job","The Poll Mine","Weapons Drawn","The Wheel of Enormous Proportions",
-    "Fibbage 4","Quixort","Junktopia","Nonsensory","Roomerang"
+    "Fibbage 4","Quixort","Junktopia","Nonsensory","Roomerang",
+    "Dodo Re Mi","FixyText","Hypnotorious","Tee K.O. 2","Timejinx"
 ];

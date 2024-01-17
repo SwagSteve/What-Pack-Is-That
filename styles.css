@@ -451,6 +451,18 @@ body{
   opacity: 0;
   transition: 0.5s;
 }
+#popup10 {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.30);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
 
 #popup1.active{
   top: 50%;
@@ -501,6 +513,12 @@ body{
   transition: 0.5s;
 }
 #popup9.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+#popup10.active{
   top: 50%;
   visibility: visible;
   opacity: 1;

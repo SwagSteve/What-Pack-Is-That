@@ -61,6 +61,12 @@ function toggle9() {
   var popup9 = document.getElementById("popup9")
   popup9.classList.toggle("active")
 }
+function toggle10() {
+  var blur = document.getElementById("blur")
+  blur.classList.toggle("active")
+  var popup10 = document.getElementById("popup10")
+  popup10.classList.toggle("active")
+}
 
 function random() {
   //DEFINE PACK LIST
@@ -73,6 +79,7 @@ function random() {
   const pack7 = ["quiplash3","thedevilandthedetails","champdup","talkingpoints","blatherround"]
   const pack8 = ["drawfulanimate","jobjob","thepollmine","weaponsdrawn","thewheel"]
   const pack9 = ["fibbage4","quixort","junktopia","nonsensory","roomerang"]
+  const pack10 = ["dodoremi","fixytext","hypnotorious","teeko2","timejinx"]
 
   set = []
 
@@ -104,6 +111,9 @@ function random() {
   if (document.getElementById("pack9").checked) {
     set = set.concat(pack9);
   } 
+  if (document.getElementById("pack10").checked) {
+    set = set.concat(pack10);
+  }
 
   console.log(set)
 
@@ -135,6 +145,8 @@ function random() {
       url = url.concat(baseURL, "game-pages/", "pack8/", item, ".html")
     }  else if (pack9.includes(item)) {
       url = url.concat(baseURL, "game-pages/", "pack9/", item, ".html")
+    }  else if (pack10.includes(item)) {
+      url = url.concat(baseURL, "game-pages/", "pack10/", item, ".html")
     }
     
     window.open(url, '_blank').focus();

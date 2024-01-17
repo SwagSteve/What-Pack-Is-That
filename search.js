@@ -9,7 +9,8 @@ let array = [
     "triviamurderparty2","rolemodels","jokeboat","dictionarium","pushthebutton",
     "quiplash3","thedevilandthedetails","champdup","talkingpoints","blatherround",
     "drawfulanimate","jobjob","thepollmine","weaponsdrawn","thewheel",
-    "fibbage4","quixort","junktopia","nonsensory","roomerang"
+    "fibbage4","quixort","junktopia","nonsensory","roomerang",
+    "dodoremi","fixytext","hypnotorious","teeko2","timejinx"
 ];
 
 const pack1 = ["jack2015","fibbagexl","drawful","wordspud","lieswatter"]
@@ -21,6 +22,7 @@ const pack6 = ["triviamurderparty2","rolemodels","jokeboat","dictionarium","push
 const pack7 = ["quiplash3","thedevilandthedetails","champdup","talkingpoints","blatherround"]
 const pack8 = ["drawfulanimate","jobjob","thepollmine","weaponsdrawn","thewheel"]
 const pack9 = ["fibbage4","quixort","junktopia","nonsensory","roomerang"]
+const pack10 = ["dodoremi","fixytext","hypnotorious","teeko2","timejinx"]
 
 const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input")
@@ -77,6 +79,8 @@ function select(element) {
         url = url.concat("https://swagsteve.github.io/What-Pack-Is-That/", "game-pages/", "pack8/", array[value], ".html")
     } else if (pack9.includes(array[value])) {
         url = url.concat("https://swagsteve.github.io/What-Pack-Is-That/", "game-pages/", "pack9/", array[value], ".html")
+    } else if (pack10.includes(array[value])) {
+        url = url.concat("https://swagsteve.github.io/What-Pack-Is-That/", "game-pages/", "pack10/", array[value], ".html")
     }
 
     window.open(url, '_blank').focus();
