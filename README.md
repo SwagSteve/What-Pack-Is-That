@@ -27,11 +27,6 @@ There are "Quick Run With Steam" buttons littered across the site which allows q
  * The average time to play the game
  * Audience capacities
  * Description of the game
- 
-### Here is an example of a game page:
-<p align="center">
-  <img src="https://iili.io/HcKM7ae.md.png">
-</p>
 
 <h1 align="center">
   Extras
